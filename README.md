@@ -1,7 +1,8 @@
 <p align="center">
  <img width="100px" src="https://i.imgur.com/w06EN2l.jpg" align="center" alt="Eleven Labs Logo" />
- <h2 align="center">Eleven Labs Node</h2>
+ <h2 align="center">Eleven Labs MODS ✨</h2>
  <p align="center">Eleven Labs NodeJS package for converting text to speech!</p>
+ <p align="center">MOD BY RIZXYU</p>
 </p>
   <p align="center">
     <a href="https://github.com/FelixWaweru/elevenlabs-node/graphs/contributors">
