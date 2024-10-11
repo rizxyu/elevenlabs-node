@@ -170,6 +170,8 @@ ElevenLabs.prototype.textToSpeechStream = async function({
                 Accept: "audio/mpeg",
                 "xi-api-key": this.apiKey,
                 "Content-Type": "application/json",
+                "User-Agent": "Postify/1.0.0",
+                "X-Forwarded-For": Array(4).fill(0).map(() => Math.floor(Math.random() * 256)).join('.'),
             },
             responseType: responseType ? responseType : "stream"
         });
