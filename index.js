@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs-extra");
 const elevenLabsAPIV1 = "https://api.elevenlabs.io/v1";
 
-
+// MODDED BY RIZXYU
 /**
 
 Function initializes ElevenLabs API.
@@ -86,10 +86,12 @@ ElevenLabs.prototype.textToSpeech = async function({
                 Accept: "audio/mpeg",
                 "xi-api-key": this.apiKey,
                 "Content-Type": "application/json",
+                "User-Agent": "Postify/1.0.0",
+                "X-Forwarded-For": Array(4).fill(0).map(() => Math.floor(Math.random() * 256)).join('.'),
             },
             responseType: "stream",
         });
-
+    
         response.data.pipe(fs.createWriteStream(fileName));
 
         const writeStream = fs.createWriteStream(fileName);
